@@ -1,6 +1,5 @@
 import Link from "next/link";
 import MaxWidthWrapper from "./MaxWidthWrapper";
-import { HeartIcon, X } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -11,17 +10,7 @@ const Footer = () => {
         <div className="h-full flex flex-col md:flex-row md:justify-between justify-center items-center">
           <div className="text-center md:text-left pb-2 md:pb-0">
             <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} All rights reserved.
-              <span className="flex ">
-                {" "}
-                Made with love by <X className="w-5 h-5  text-black/50" />
-                <a
-                  className="hover:text-slate-900"
-                  href="https://twitter.com/yynoes"
-                >
-                  @yynoes
-                </a>
-              </span>
+              &copy; {new Date().getFullYear()} All rights reserved
             </p>
           </div>
 

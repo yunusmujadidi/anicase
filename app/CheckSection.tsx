@@ -1,10 +1,10 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { buttonVariants } from "@/components/ui/button";
-import { Check, ArrowRight } from "lucide-react";
+import { Check, Link, ArrowRight } from "lucide-react";
 import React from "react";
 import Image from "next/image";
 import Phone from "@/components/Phone";
-import Link from "next/link";
+
 const CheckSection = () => {
   return (
     <section>
@@ -63,12 +63,11 @@ const CheckSection = () => {
             <Link
               className={buttonVariants({
                 size: "lg",
-                className: "mx-auto mt-8 hover:bg-orange-400 ",
+                className: "mx-auto mt-8 hover:bg-orange-400",
               })}
               href="/configure/upload"
             >
-              Create your case now{" "}
-              <ArrowRight className="h-5 w-5 ml-1.5 hover:animate-marquee" />
+              Create your case now <ArrowRight className="h-5 w-5 ml-1.5" />
             </Link>
           </div>
         </ul>
